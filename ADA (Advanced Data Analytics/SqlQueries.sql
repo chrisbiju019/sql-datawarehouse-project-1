@@ -8,7 +8,7 @@ Count(DISTINCT customer_key) AS total_customers,
 Sum(price) AS total_quantity
 from gold.fact_sales
 Where order_date IS NOT NULL
-Gruop BY YEAR(order_date), MONTH(order_date)
+Group BY YEAR(order_date), MONTH(order_date)
 Order BY YEAR(order_date), MONTH(order_date);
 
 -- Performance Analysis
